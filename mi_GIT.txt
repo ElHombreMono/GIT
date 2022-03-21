@@ -1,0 +1,14 @@
+1. Entramos en la carpeta:
+    cd C:\\....
+
+2.1 Creamos repositorio:
+    git init
+
+2.2 Clonamos repositorio:
+    git clone "url"
+
+2.3 Si estamos en el repositorio, no hay que hace nada.
+
+3. Ver el estado del repositorio:
+    git status
+
