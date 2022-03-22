@@ -1,14 +1,38 @@
-1. Entramos en la carpeta:
-    cd C:\\....
+1.  Entramos en la carpeta:
+        cd C:\\....
 
 2.1 Creamos repositorio:
-    git init
+        git init
 
 2.2 Clonamos repositorio:
-    git clone "url"
+        git clone "url"
 
 2.3 Si estamos en el repositorio, no hay que hace nada.
 
-3. Ver el estado del repositorio:
-    git status
+3.  Ver el estado del repositorio:
+        git status
 
+4.  Preparar el archivo para pushear:
+        git add "nombreArchivo"
+
+5.  Para hacer commit:
+        git commit -m "comentario"
+        git commit -a -m "comentario"(para hacer el commit desde el archivo sin preparar)
+
+6.  Para subir a GitHub:
+        6.1 Si la url no está especificada:
+            git push "url"
+            git remote -u origin "url"
+            git push -u origin "rama"
+        6.2 Si la url está especificada:
+            git push
+
+    (Para generar token de GitHub: Settings/Developer settings/personal access tokens)
+
+7. Para ver el registro:
+    7.1 Para ver el registro de los commit hechos:
+            git log
+    7.2 Para veer los registros de los commit más los detalles:
+            git log -p
+    7.2.Para salir de los registros:
+            q
