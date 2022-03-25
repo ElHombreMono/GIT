@@ -58,5 +58,10 @@
     9.5 Eliminar rama: (No se puede eliminar desde ella misma)
         git branch -d "nombre de la rama" (Se une a la principal)
         git branch -D "nombre de la rama" (Elimina sin modificar la principal)
+    9.6 Push de la rama a GitHub:
+        git push "url del repositorio"
+
+estoy en la rama 2
+
 
 dia2_ramas
