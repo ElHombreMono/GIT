@@ -1,38 +1,62 @@
 1.  Entramos en la carpeta:
         cd C:\\....
 
-2.1 Creamos repositorio:
-        git init
+2   Repositorio:
+    2.1 Creamos repositorio:
+            git init
 
-2.2 Clonamos repositorio:
-        git clone "url"
+    2.2 Clonamos repositorio:
+            git clone "url"
 
-2.3 Si estamos en el repositorio, no hay que hace nada.
+    2.3 Si estamos en el repositorio, no hay que hace nada.
 
 3.  Ver el estado del repositorio:
         git status
 
 4.  Preparar el archivo para pushear:
         git add "nombreArchivo"
+        git add. Para preparar todos los archivos modificados
 
 5.  Para hacer commit:
-        git commit -m "comentario"
-        git commit -a -m "comentario"(para hacer el commit desde el archivo sin preparar)
+        git commit -m "comentario" (sin "comentario" guarda la fecha)
+        git commit -a -m "comentario"(para hacer el commit desde el archivo sin
+            preparar)(Guarda todos los archivos modificado)
 
 6.  Para subir a GitHub:
-        6.1 Si la url no está especificada:
-            git push "url"
-            git remote -u origin "url"
-            git push -u origin "rama"
-        6.2 Si la url está especificada:
-            git push
+    6.1 Si la url no está especificada:
+        git push "url"
+        git remote -u origin "url"
+        git push -u origin "rama"
+    6.2 Si la url está especificada:
+        git push
 
-    (Para generar token de GitHub: Settings/Developer settings/personal access tokens)
+(Para terminar antes de tiempo polsamos "q")
+(Para generar token de GitHub: Settings/Developer settings/personal access tokens)
 
 7. Para ver el registro:
     7.1 Para ver el registro de los commit hechos:
             git log
     7.2 Para veer los registros de los commit más los detalles:
             git log -p
-    7.2.Para salir de los registros:
+    7.3 Para salir de los registros:
             q
+    7.4 Para ver el último registro:
+            git log (-p) -1
+
+8.  Detalle de las modificaciones:
+    git diff
+
+9.  Ramas:
+    9.1 Crear rama:
+        git branch "nombre de nueva rama" (Crea una rama)
+    9.2 Mostrar ramas:
+        git branch
+    9.3 Renombrar rama:
+        git branch -m "nuevo nombre"
+    9.4 Cambiar de rama:
+        git checkout "nombre de la rama a la que queremos ir"
+    9.5 Eliminar rama: (No se puede eliminar desde ella misma)
+        git branch -d "nombre de la rama" (Se une a la principal)
+        git branch -D "nombre de la rama" (Elimina sin modificar la principal)
+
+dia2_ramas
