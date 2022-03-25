@@ -61,7 +61,8 @@
     9.6 Push de la rama a GitHub:
         git push "url del repositorio"
 
-Estoy en la rama 2
 
+Estoy en la rama 2
+Y luego a la rama 1
 
 dia2_ramas
